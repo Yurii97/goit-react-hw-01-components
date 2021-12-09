@@ -1,3 +1,4 @@
+import Container from './components/container/Container';
 import Friends from './components/Friends/Friends';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
@@ -10,10 +11,18 @@ import dataTransactions from './Data/transactions.json';
 function App() {
   return (
     <div>
-      <Profile user={dataUser} />
-      <Friends friends={dataFriends} />
-      <Statistics data={dataStatistics} />
-      <Transactions item={dataTransactions} />
+      <Container>
+        <Profile user={dataUser} />
+      </Container>
+      <Container>
+        <Friends friends={dataFriends} />
+      </Container>
+      <Container>
+        <Statistics data={dataStatistics} />
+      </Container>
+      <Container>
+        <Transactions item={dataTransactions} />
+      </Container>
     </div>
   );
 }

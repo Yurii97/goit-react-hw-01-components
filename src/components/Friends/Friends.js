@@ -1,4 +1,5 @@
-function Friends() {
+function Friends(friends) {
+  // console.log(friends);
   return null;
 }
 

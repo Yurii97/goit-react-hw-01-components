@@ -1,4 +1,5 @@
-function Statistics() {
+function Statistics(data) {
+  // console.log(data);
   return null;
 }
 

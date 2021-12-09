@@ -1,4 +1,5 @@
-function Transactions() {
+function Transactions(item) {
+  // console.log(item);
   return null;
 }
 

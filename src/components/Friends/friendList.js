@@ -4,7 +4,7 @@ function FriendList({ friends }) {
   return (
     <ul>
       {friends.map(friend => (
-        <li key={friend.id}>
+        <li key={friend.id} className="item">
           <Friend
             avatar={friend.avatar}
             name={friend.name}

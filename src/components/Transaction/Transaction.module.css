@@ -1,0 +1,15 @@
+.transactionHistory {
+  width: 400px;
+}
+th {
+  background-color: rgb(149, 70, 206);
+  color: white;
+}
+th,
+td {
+  text-align: center;
+  border: 1px solid grey;
+}
+tr:nth-child(2n) {
+  background-color: rgb(184, 184, 184);
+}

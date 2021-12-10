@@ -1,10 +1,11 @@
 import TransactionsList from './TransactionsList';
 import TransactionsHead from './TransactionsHead';
 import PropTypes from 'prop-types';
+import s from './Transaction.module.css';
 
 function Transactions({ data }) {
   return (
-    <table className="transaction-history">
+    <table className={s.transactionHistory}>
       <TransactionsHead />
       <TransactionsList items={data} />
     </table>

@@ -10,7 +10,6 @@ function Profile({ user }) {
         location={user.location}
         avatar={user.avatar}
       />
-
       <Stat stats={user.stats} />
     </div>
   );

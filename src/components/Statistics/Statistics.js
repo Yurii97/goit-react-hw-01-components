@@ -1,10 +1,10 @@
 import StatisticsTitle from './StatisticsTitle';
 import StatisticsList from './StatisticsList';
 
-function Statistics({ data }) {
+function Statistics({ title, data }) {
   return (
     <section className="statistics">
-      <StatisticsTitle title="Upload stats" />
+      {{ title } && <StatisticsTitle title={title} />}
       <StatisticsList stats={data} />
     </section>
   );

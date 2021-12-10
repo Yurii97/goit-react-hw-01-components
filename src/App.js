@@ -18,6 +18,9 @@ function App() {
         <Friends friends={dataFriends} />
       </Container>
       <Container>
+        <Statistics title="Upload stats" data={dataStatistics} />
+      </Container>
+      <Container>
         <Statistics data={dataStatistics} />
       </Container>
       <Container>

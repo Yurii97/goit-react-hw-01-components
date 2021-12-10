@@ -21,7 +21,7 @@ function App() {
         <Statistics data={dataStatistics} />
       </Container>
       <Container>
-        <Transactions item={dataTransactions} />
+        <Transactions data={dataTransactions} />
       </Container>
     </div>
   );

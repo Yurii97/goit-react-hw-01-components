@@ -1,0 +1,19 @@
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.true {
+  background-color: green;
+}
+.false {
+  background-color: red;
+}
+.avatar {
+  margin-left: 10px;
+}
+.name {
+  font-size: 20px;
+  margin-left: 20px;
+}

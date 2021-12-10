@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
+import s from './Friend.module.css';
 
 function Friend({ avatar, name, isOnline }) {
   return (
     <Fragment>
-      <span className={`status status--${isOnline}`}></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+      <span className={`${s.status} ${s[isOnline]}`}></span>
+      <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={s.name}>{name}</p>
     </Fragment>
   );
 }

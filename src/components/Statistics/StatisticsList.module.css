@@ -1,0 +1,13 @@
+.statList {
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+.item {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}

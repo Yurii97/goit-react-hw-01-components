@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Stat({ stats }) {
   return (
     <ul className="stats">
@@ -16,5 +18,13 @@ function Stat({ stats }) {
     </ul>
   );
 }
+
+Stat.propTypes = {
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
+};
 
 export default Stat;

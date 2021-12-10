@@ -1,4 +1,5 @@
 import Friend from './Friend';
+import PropTypes from 'prop-types';
 
 function FriendList({ friends }) {
   return (
@@ -15,5 +16,16 @@ function FriendList({ friends }) {
     </ul>
   );
 }
+
+FriendList.prototype = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    })
+  ),
+};
 
 export default FriendList;

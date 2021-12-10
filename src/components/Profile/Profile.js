@@ -1,9 +1,11 @@
 import Stat from './Stat/Stat';
 import Description from './Description/Description';
 
+import PropTypes from 'prop-types';
+
 function Profile({ user }) {
   return (
-    <div class="profile">
+    <div className="profile">
       <Description
         username={user.username}
         tag={user.tag}
@@ -14,5 +16,15 @@ function Profile({ user }) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  user: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string,
+    stats: PropTypes.object.isRequired,
+  }),
+};
 
 export default Profile;

@@ -4,16 +4,16 @@ import s from './Profile.module.css';
 
 import PropTypes from 'prop-types';
 
-function Profile({ user }) {
+function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={s.profile}>
       <Description
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
       />
-      <Stat stats={user.stats} />
+      <Stat stats={stats} />
     </div>
   );
 }

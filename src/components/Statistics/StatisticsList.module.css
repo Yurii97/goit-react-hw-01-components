@@ -12,3 +12,10 @@
   padding: 10px 0 10px 0;
   color: #fff;
 }
+
+.label {
+  font-size: 12px;
+}
+.percentage {
+  font-size: 18px;
+}

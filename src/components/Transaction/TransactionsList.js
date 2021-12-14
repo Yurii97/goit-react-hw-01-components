@@ -1,15 +1,11 @@
-import OneTransaction from './OneTransaction';
-
 function TransactionsList({ items }) {
   return (
     <tbody>
-      {items.map(item => (
-        <tr key={item.id}>
-          <OneTransaction
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
-          />
+      {items.map(({ id, type, amount, currency }) => (
+        <tr key={id}>
+          <td>{type}</td>
+          <td>{amount}</td>
+          <td>{currency}</td>
         </tr>
       ))}
     </tbody>

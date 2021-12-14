@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 function FriendsList({ friends }) {
   return (
     <ul>
-      {friends.map(friends => (
+      {friends.map(friend => (
         <Friend
-          id={friends.id}
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
+          key={friend.id}
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
         />
       ))}
     </ul>

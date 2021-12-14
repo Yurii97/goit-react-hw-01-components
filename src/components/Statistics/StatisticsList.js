@@ -1,19 +1,20 @@
-import StatisticsElem from './StatisticsElem';
 import s from './StatisticsList.module.css';
 
 function StatisticsList({ stats }) {
   return (
     <ul className={s.statList}>
-      {stats.map(stat => {
+      {stats.map(({ id, label, percentage }) => {
         const randomColor =
           '#' + Math.floor(Math.random() * 16777215).toString(16);
         return (
+          // console.log(stat.id)
           <li
             className={s.item}
-            key={stat.id}
+            key={id}
             style={{ backgroundColor: randomColor }}
           >
-            <StatisticsElem label={stat.label} percentage={stat.percentage} />
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage} %</span>
           </li>
         );
       })}

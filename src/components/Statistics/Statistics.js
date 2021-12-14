@@ -1,4 +1,3 @@
-import StatisticsTitle from './StatisticsTitle';
 import StatisticsList from './StatisticsList';
 
 import s from './Statistics.module.css';
@@ -7,7 +6,7 @@ import PropTypes from 'prop-types';
 function Statistics({ title, data }) {
   return (
     <section className={s.statistics}>
-      {title && <StatisticsTitle title={title} />}
+      {title && <h2 className="title">{title}</h2>}
       <StatisticsList stats={data} />
     </section>
   );
